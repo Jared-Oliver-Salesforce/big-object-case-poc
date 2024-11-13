@@ -1,0 +1,15 @@
+<template>
+    <div class="slds-p-bottom_small">
+        <lightning-button 
+            label="Get Archived Cases" 
+            variant="brand"
+            onclick={handleClick}>
+        </lightning-button>
+    </div>
+    <lightning-datatable
+        key-field="Case_Number__c"
+        data={archivedCases}
+        columns={columns}
+        hide-checkbox-column>
+    </lightning-datatable>
+</template>
